@@ -5,6 +5,12 @@
                 <Link href="/" class="text-xl font-bold text-indigo-600">MyStore</Link>
                 <div class="flex items-center gap-4">
                     <Link href="/products" class="text-sm text-gray-600 hover:text-indigo-600 transition">Products</Link>
+                    <Link
+                        href="/register"
+                        class="text-sm border border-indigo-200 text-indigo-700 px-4 py-2 rounded-lg hover:bg-indigo-50 transition"
+                    >
+                        Create Account
+                    </Link>
                     <Link href="/login" class="text-sm bg-indigo-600 text-white px-4 py-2 rounded-lg hover:bg-indigo-700 transition">Login</Link>
                 </div>
             </div>
@@ -13,7 +19,7 @@
             <slot />
         </main>
         <footer class="bg-white border-t border-gray-200 mt-16 py-8 text-center text-sm text-gray-400">
-            © {{ new Date().getFullYear() }} MyStore. All rights reserved.
+            Copyright {{ new Date().getFullYear() }} MyStore. All rights reserved.
         </footer>
     </div>
 </template>

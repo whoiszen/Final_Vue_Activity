@@ -39,6 +39,24 @@ const showingNavigationDropdown = ref(false);
                                 >
                                     Dashboard
                                 </NavLink>
+                                <NavLink
+                                    :href="route('admin.suppliers.index')"
+                                    :active="route().current('admin.suppliers.*')"
+                                >
+                                    Suppliers
+                                </NavLink>
+                                <NavLink
+                                    :href="route('admin.products.index')"
+                                    :active="route().current('admin.products.*')"
+                                >
+                                    Products
+                                </NavLink>
+                                <NavLink
+                                    :href="route('admin.inventories.index')"
+                                    :active="route().current('admin.inventories.*')"
+                                >
+                                    Inventories
+                                </NavLink>
                             </div>
                         </div>
 
@@ -145,6 +163,24 @@ const showingNavigationDropdown = ref(false);
                             :active="route().current('dashboard')"
                         >
                             Dashboard
+                        </ResponsiveNavLink>
+                        <ResponsiveNavLink
+                            :href="route('admin.suppliers.index')"
+                            :active="route().current('admin.suppliers.*')"
+                        >
+                            Suppliers
+                        </ResponsiveNavLink>
+                        <ResponsiveNavLink
+                            :href="route('admin.products.index')"
+                            :active="route().current('admin.products.*')"
+                        >
+                            Products
+                        </ResponsiveNavLink>
+                        <ResponsiveNavLink
+                            :href="route('admin.inventories.index')"
+                            :active="route().current('admin.inventories.*')"
+                        >
+                            Inventories
                         </ResponsiveNavLink>
                     </div>
 

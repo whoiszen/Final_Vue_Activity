@@ -3,11 +3,20 @@
     <AuthenticatedLayout>
         <template #header>
             <div class="flex items-center justify-between">
-                <h2 class="font-semibold text-xl text-gray-800">Products</h2>
-                <Link :href="route('admin.products.create')"
-                    class="bg-indigo-600 text-white text-sm px-4 py-2 rounded-lg hover:bg-indigo-700 transition">
-                    + Add Product
-                </Link>
+                <div>
+                    <p class="text-sm text-gray-500">Dashboard / Products</p>
+                    <h2 class="font-semibold text-xl text-gray-800">Products</h2>
+                </div>
+                <div class="flex items-center gap-3">
+                    <Link :href="route('dashboard')"
+                        class="border border-gray-300 text-gray-600 text-sm px-4 py-2 rounded-lg hover:bg-gray-50 transition">
+                        Back to Dashboard
+                    </Link>
+                    <Link :href="route('admin.products.create')"
+                        class="bg-indigo-600 text-white text-sm px-4 py-2 rounded-lg hover:bg-indigo-700 transition">
+                        + Add Product
+                    </Link>
+                </div>
             </div>
         </template>
 

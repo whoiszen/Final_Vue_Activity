@@ -2,7 +2,16 @@
     <Head title="Inventories" />
     <AuthenticatedLayout>
         <template #header>
-            <h2 class="font-semibold text-xl text-gray-800">Inventories</h2>
+            <div class="flex items-center justify-between">
+                <div>
+                    <p class="text-sm text-gray-500">Dashboard / Inventories</p>
+                    <h2 class="font-semibold text-xl text-gray-800">Inventories</h2>
+                </div>
+                <Link :href="route('dashboard')"
+                    class="border border-gray-300 text-gray-600 text-sm px-4 py-2 rounded-lg hover:bg-gray-50 transition">
+                    Back to Dashboard
+                </Link>
+            </div>
         </template>
         <div class="py-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <FlashMessage />
